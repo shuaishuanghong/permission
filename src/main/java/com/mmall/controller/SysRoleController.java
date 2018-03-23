@@ -42,4 +42,9 @@ public class SysRoleController {
         return JsonData.success(sysRoleService.getAll());
     }
 
+
+    public JsonData liswsddsat() {
+        return JsonData.success(sysRoleService.getAll());
+    }
+
 }
