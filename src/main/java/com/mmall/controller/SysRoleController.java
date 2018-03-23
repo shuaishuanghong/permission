@@ -41,4 +41,8 @@ public class SysRoleController {
     public JsonData list() {
         return JsonData.success(sysRoleService.getAll());
     }
+
+    public JsonData listd55() {
+        return JsonData.success(sysRoleService.getAll());
+    }
 }
