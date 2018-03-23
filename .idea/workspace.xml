@@ -8,218 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8dadd6-0f58-4d9d-8155-95bc8f913641" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/beans/Mail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/beans/PageQuery.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/beans/PageResult.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/commom/RequestHolder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/AdminController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysAclController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysAclModuleController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysRoleController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysUserController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/UserController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dto/AclModuleLevelDto.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/filter/LoginFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/AclModuleParam.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/AclParam.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/RoleParam.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/UserParam.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysAclModuleService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysAclService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysRoleService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysUserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/IpUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/MD5Util.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/MailUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/PasswordUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/acl.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dept.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/role.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/profile-pic.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/avatars/user.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ace-rtl.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ace-skins.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ace.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-datetimepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-duallistbox.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-editable.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-timepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/chosen-sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/chosen-sprite@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/chosen.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/colorbox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/colorpicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/datepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/daterangepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/dropzone.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/fullcalendar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/google-fonts.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/animated-overlay.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/border.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/controls.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/loading_background.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/meteorshower2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/overlay.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/images/pattern.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/img/alpha.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/img/hue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/img/saturation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/jquery-ui.custom.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/jquery-ui.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/jquery.gritter.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/prettify.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/select2-spinner.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/select2.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/select2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/select2x2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ui.jqgrid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/OpenSans-Light.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/OpenSans.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.eot_" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gallery/thumb-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gallery/thumb-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gallery/thumb-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gallery/thumb-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gritter-light.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/gritter.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/ie-spacer.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/spritemap.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/spritemap@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/clear.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/ace-elements.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/ace-extra.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/ace.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/additional-methods.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootbox.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-colorpicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-tag.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-wysiwyg.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/chosen.jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/date-time/bootstrap-datepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/date-time/bootstrap-datetimepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/date-time/bootstrap-timepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/date-time/daterangepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/date-time/moment.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/dropzone.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/flot/jquery.flot.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/flot/jquery.flot.pie.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/flot/jquery.flot.resize.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/fuelux/data/fuelux.tree-sample-demo-data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/fuelux/fuelux.spinner.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/fuelux/fuelux.tree.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/fuelux/fuelux.wizard.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/fullcalendar.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jqGrid/i18n/grid.locale-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jqGrid/jquery.jqGrid.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.11.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-2.1.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-ui.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-ui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.autosize.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.bootstrap-duallistbox.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.colorbox-min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.dataTables.bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.dataTables.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.easypiechart.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.gritter.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.hotkeys.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.inputlimiter.1.3.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.knob.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.maskedinput.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.mobile.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.nestable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.slimscroll.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.sparkline.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.ui.touch-punch.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.validate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/markdown/bootstrap-markdown.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/markdown/markdown.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/prettify.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/select2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/spin.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/x-editable/ace-editable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/x-editable/bootstrap-editable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap3.3.5/js/npm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/common/backend_common.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/common/page.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/group_col.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/lightbox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/public.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/signin.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/html5shiv.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ie-emulation-modes-warning.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ie10-viewport-bug-workaround.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ie8-responsive-file-warning.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/respond.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/signin.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/permission_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/permission_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/permission.iml" afterPath="$PROJECT_DIR$/permission.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/commom/HttpInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/commom/HttpInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysDeptController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/SysDeptController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/testController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/testController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysAclMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysAclMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysAclModuleMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysAclModuleMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysDeptMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysDeptMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysRoleMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysRoleMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysUserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/SysUserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysAcl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysAcl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysAclModule.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysAclModule.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysRole.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/model/SysUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/param/DeptParam.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/param/DeptParam.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysDeptService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysDeptService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysTreeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/SysTreeService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysAclMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysAclMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysAclModuleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysAclModuleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysDeptMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysDeptMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysAclMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysAclMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysAclModuleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysAclModuleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysDeptMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysDeptMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysAclMapper.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysAclMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysAclModuleMapper.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysAclModuleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysDeptMapper.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysDeptMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/classes/mapper/SysUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/spring-servlet.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/spring-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/target/permission/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/permission/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -251,8 +40,8 @@
       <file leaf-file-name="SysRoleController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/SysRoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="517">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#600#601#0" expanded="true" />
@@ -417,9 +206,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="654" />
-    <option name="y" value="2" />
-    <option name="width" value="988" />
+    <option name="x" value="749" />
+    <option name="y" value="9" />
+    <option name="width" value="804" />
     <option name="height" value="866" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1045,12 +834,12 @@
       <workItem from="1521630457079" duration="420000" />
       <workItem from="1521678666891" duration="20414000" />
       <workItem from="1521707156417" duration="7485000" />
-      <workItem from="1521765027919" duration="19554000" />
+      <workItem from="1521765027919" duration="20667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124546000" />
+    <option name="totallyTimeSpent" value="125659000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1063,8 +852,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="654" y="2" width="988" height="866" extended-state="0" />
-    <editor active="true" />
+    <frame x="749" y="9" width="804" height="866" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.107586205" sideWeight="0.16094421" order="7" side_tool="true" content_ui="tabs" />
@@ -1083,11 +871,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11172414" sideWeight="0.83388704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7659864" sideWeight="0.83388704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.748621" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33225107" sideWeight="0.6090604" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32965517" sideWeight="0.748621" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41216215" sideWeight="0.6090604" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.51342285" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1692,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/SysRoleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="517">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
