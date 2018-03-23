@@ -39,5 +39,10 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
         long start=(Long) request.getAttribute("time");
         long end=System.currentTimeMillis();
         log.info(" request excption url :{},params{},cost{}", url, JsonMapper.obj2String(parameterMap),end-start);
+        removetreadLocalInfo();
+    }
+
+    public  void removetreadLocalInfo(){
+        RequestHolder.remove();
     }
 }

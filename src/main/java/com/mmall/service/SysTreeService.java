@@ -3,9 +3,13 @@ package com.mmall.service;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
+import com.mmall.dao.SysAclModuleMapper;
 import com.mmall.dao.SysDeptMapper;
+import com.mmall.dto.AclModuleLevelDto;
 import com.mmall.dto.DeptlevelDto;
+import com.mmall.model.SysAclModule;
 import com.mmall.model.SysDept;
+import com.mmall.param.DeptParam;
 import com.mmall.util.levelutil;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MultiMap;
@@ -21,6 +25,9 @@ public class SysTreeService {
 
      @Resource
      private SysDeptMapper sysDeptMapper;
+
+     @Resource
+     private SysAclModuleMapper sysAclModuleMapper;
 
      public List<DeptlevelDto> deptTree(){
          List<SysDept> deptList =sysDeptMapper.getAllDept();
@@ -53,6 +60,8 @@ public class SysTreeService {
                  return o1.getSeq()-o2.getSeq();
              }
          });
+
+         /*Collections.sort(rootList,(x,y)->{return x.getSeq()-y.getSeq();});*/
          transformDeptTree(rootList,levelutil.ROOT,leveDeptMap);
          return rootList;
      }
@@ -70,9 +79,66 @@ public class SysTreeService {
          }
 
      }
+
     public Comparator<DeptlevelDto> deptSeqComparator = new Comparator<DeptlevelDto>() {
         public int compare(DeptlevelDto o1, DeptlevelDto o2) {
             return o1.getSeq() - o2.getSeq();
         }
     };
+
+     public List<AclModuleLevelDto> aclModuleTree(){
+         List<SysAclModule> aclModuleList=sysAclModuleMapper.getAllAclModule();
+         List<AclModuleLevelDto> dtoList=Lists.newArrayList();
+         for(SysAclModule sysAclModule:aclModuleList){
+                dtoList.add(AclModuleLevelDto.adapt(sysAclModule));
+         }
+
+         return aclModuleListToTree(dtoList);
+
+     }
+
+     public  List<AclModuleLevelDto> aclModuleListToTree(List<AclModuleLevelDto> list){
+         if(CollectionUtils.isEmpty(list)){
+             return  Lists.newArrayList();
+         }
+         Multimap<String, AclModuleLevelDto> levelDtoMultiMap=ArrayListMultimap.create();
+
+         List<AclModuleLevelDto> rootList=Lists.newArrayList();
+         for(AclModuleLevelDto aclModuleLevelDto:list){
+             levelDtoMultiMap.put(aclModuleLevelDto.getLevel(),aclModuleLevelDto);
+             if(levelutil.ROOT.equals(aclModuleLevelDto.getLevel())){
+                 rootList.add(aclModuleLevelDto);
+             }
+         }
+         Collections.sort(rootList, new Comparator<AclModuleLevelDto>() {
+             @Override
+             public int compare(AclModuleLevelDto o1, AclModuleLevelDto o2) {
+                 return o1.getSeq()-o2.getSeq();
+             }
+         });
+
+         transformAclTree(rootList,levelutil.ROOT,levelDtoMultiMap);
+
+         return rootList;
+     }
+
+    public  void transformAclTree(List<AclModuleLevelDto> rootList,String level,Multimap<String, AclModuleLevelDto> leveDeptMap){
+         for(int i=0;i<rootList.size();i++){
+             AclModuleLevelDto dto = rootList.get(i);
+             String nextLevel = levelutil.calculateLevel(level, dto.getId());
+             List<AclModuleLevelDto> tempList = (List<AclModuleLevelDto>) leveDeptMap.get(nextLevel);
+             if(CollectionUtils.isNotEmpty(tempList)){
+                 Collections.sort(tempList, ACLSeqComparator);
+                 dto.setAclModuleList(tempList);
+                 transformAclTree(tempList,nextLevel,leveDeptMap);
+             }
+         }
+    }
+
+    public Comparator<AclModuleLevelDto> ACLSeqComparator = new Comparator<AclModuleLevelDto>() {
+        public int compare(AclModuleLevelDto o1, AclModuleLevelDto o2) {
+            return o1.getSeq() - o2.getSeq();
+        }
+    };
+
 }
