@@ -49,4 +49,11 @@ public class SysAclModuleController {
         List<AclModuleLevelDto> aclModuleLevelDtoList=sysTreeService.aclModuleTree();
         return JsonData.success(aclModuleLevelDtoList);
     }
+
+    @RequestMapping("/delete.json")
+    @ResponseBody
+    public JsonData delete(@RequestParam("id") int id){
+            sysAclModuleService.delete(id);
+        return JsonData.success();
+    }
 }

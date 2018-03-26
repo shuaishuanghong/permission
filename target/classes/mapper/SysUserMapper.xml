@@ -199,5 +199,16 @@
     order by username ASC
     limit #{page.offset},#{page.pageSize}
   </select>
-
+<select id="getByIdList" parameterType="map" resultMap="BaseResultMap">
+  SELECT  <include refid="Base_Column_List"/>
+  FROM  sys_user
+  WHERE  id in
+  <foreach collection="idList" item="id" separator="," close=")" open="(">
+    #{id}
+  </foreach>
+</select>
+  <select id="getAll" resultMap="BaseResultMap">
+    SELECT  <include refid="Base_Column_List"/>
+    FROM  sys_user
+  </select>
 </mapper>

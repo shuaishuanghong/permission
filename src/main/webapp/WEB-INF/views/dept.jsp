@@ -405,7 +405,7 @@
             });
         });
         function bindUserClick() {
-            /*$(".user-acl").click(function (e) {
+            $(".user-acl").click(function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 var userId = $(this).attr("data-id");
@@ -422,7 +422,7 @@
                         }
                     }
                 })
-            });*/
+            });
             $(".user-edit").click(function(e) {
                 e.preventDefault();
                 e.stopPropagation();

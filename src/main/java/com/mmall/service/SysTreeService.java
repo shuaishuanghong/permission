@@ -3,10 +3,13 @@ package com.mmall.service;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
+import com.mmall.dao.SysAclMapper;
 import com.mmall.dao.SysAclModuleMapper;
 import com.mmall.dao.SysDeptMapper;
+import com.mmall.dto.AclDto;
 import com.mmall.dto.AclModuleLevelDto;
 import com.mmall.dto.DeptlevelDto;
+import com.mmall.model.SysAcl;
 import com.mmall.model.SysAclModule;
 import com.mmall.model.SysDept;
 import com.mmall.param.DeptParam;
@@ -16,9 +19,8 @@ import org.apache.commons.collections.MultiMap;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class SysTreeService {
@@ -29,6 +31,79 @@ public class SysTreeService {
      @Resource
      private SysAclModuleMapper sysAclModuleMapper;
 
+     @Resource
+     private  SysCoreService sysCoreService;
+
+     @Resource
+     private SysAclMapper sysAclMapper;
+
+
+    public List<AclModuleLevelDto> userAclTree(int userId){
+        //当前用户的acl
+        List<SysAcl> userAclList=sysCoreService.getUserAclList(userId);
+        List<AclDto> aclDtoList=Lists.newArrayList();
+        for(SysAcl sysAcl:userAclList){
+            AclDto aclDto= AclDto.adapt(sysAcl);
+            aclDto.setHasAcl(true);
+            aclDto.setChecked(true);
+            aclDtoList.add(aclDto);
+        }
+        return  aclListTotree(aclDtoList);
+    }
+
+     public List<AclModuleLevelDto> roleTree(int roleId){
+            //当前用户的acl
+         List<SysAcl> userAclList=sysCoreService.getCurrentUserList();
+           //当前角色的权限id
+         List<SysAcl> roleAclList=sysCoreService.getCurrentRoleList(roleId);
+
+         List<SysAcl> allAclList=sysAclMapper.getAll();
+
+         Set<Integer> userAclSet=userAclList.stream().map(x -> x.getId()).collect(Collectors.toSet());
+         Set<Integer> roleAclSet=roleAclList.stream().map(x -> x.getId()).collect(Collectors.toSet());
+
+         Set<SysAcl> aclSet=new HashSet<>(allAclList);
+
+         List<AclDto> aclDtoList=Lists.newArrayList();
+         for(SysAcl sysAcl:aclSet){
+            AclDto aclDto= AclDto.adapt(sysAcl);
+            if(userAclSet.contains(sysAcl.getId())){
+                aclDto.setHasAcl(true);
+            }
+            if(roleAclSet.contains(sysAcl.getId())){
+                aclDto.setChecked(true);
+            }
+             aclDtoList.add(aclDto);
+         }
+         return  aclListTotree(aclDtoList);
+     }
+
+     public List<AclModuleLevelDto> aclListTotree(List<AclDto> aclDtoList){
+                if(CollectionUtils.isEmpty(aclDtoList)){
+                    return Lists.newArrayList();
+                }
+                List<AclModuleLevelDto> aclModuleLevelDtoList=aclModuleTree();
+                Multimap<Integer, AclDto> moduleIdAcMap=ArrayListMultimap.create();
+                for(AclDto aclDto:aclDtoList){
+                    moduleIdAcMap.put(aclDto.getAclModuleId(),aclDto);
+                }
+                bindAclsWithOrder(aclModuleLevelDtoList,moduleIdAcMap);
+                return aclModuleLevelDtoList;
+     }
+
+     private  void bindAclsWithOrder(List<AclModuleLevelDto> aclModuleLevelDtoList, Multimap<Integer, AclDto> moduleIdAcMap){
+                if(CollectionUtils.isEmpty(aclModuleLevelDtoList)){
+                    return;
+                }
+                for(AclModuleLevelDto dto:aclModuleLevelDtoList){
+                    List<AclDto> aclDtoList= (List<AclDto>) moduleIdAcMap.get(dto.getId());
+                    if(CollectionUtils.isNotEmpty(aclDtoList)){
+                        Collections.sort(aclDtoList,(x,y)->x.getSeq()-y.getSeq());
+                        dto.setAclList(aclDtoList);
+                    }
+                    bindAclsWithOrder(dto.getAclModuleList(),moduleIdAcMap);
+                }
+     }
      public List<DeptlevelDto> deptTree(){
          List<SysDept> deptList =sysDeptMapper.getAllDept();
          List<DeptlevelDto> dtoList= Lists.newArrayList();

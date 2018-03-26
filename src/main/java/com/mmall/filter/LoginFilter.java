@@ -25,7 +25,7 @@ public class LoginFilter implements Filter{
 
         SysUser sysUser= (SysUser) req.getSession().getAttribute("user");
         if(sysUser==null){
-            String path="/singin.jsp";
+            String path="/signin.jsp";
             resp.sendRedirect(path);
             return;
         }

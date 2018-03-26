@@ -2,6 +2,7 @@ package com.mmall.service;
 
 import com.google.common.base.Preconditions;
 import com.mmall.commom.RequestHolder;
+import com.mmall.dao.SysAclMapper;
 import com.mmall.dao.SysAclModuleMapper;
 import com.mmall.exception.ParamException;
 import com.mmall.model.SysAclModule;
@@ -21,6 +22,9 @@ import java.util.List;
 public class SysAclModuleService {
     @Resource
     private SysAclModuleMapper sysAclModuleMapper;
+
+    @Resource
+    private SysAclMapper sysAclMapper;
 
     public void save(AclModuleParam param) {
         BeanValidator.check(param);
@@ -91,9 +95,10 @@ public class SysAclModuleService {
         if(sysAclModuleMapper.countByParentId(aclModule.getId()) > 0) {
             throw new ParamException("当前模块下面有子模块，无法删除");
         }
-        /*if (sysAclMapper.countByAclModuleId(aclModule.getId()) > 0) {
+        if (sysAclMapper.countByAclModuleId(aclModule.getId()) > 0) {
             throw new ParamException("当前模块下面有用户，无法删除");
-        }*/
+        }
         sysAclModuleMapper.deleteByPrimaryKey(aclModuleId);
     }
+
 }

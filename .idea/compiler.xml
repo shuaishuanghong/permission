@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="2000" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -9,8 +10,11 @@
         <module name="permission" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="permission" target="1.6" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="permission" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="false" />
   </component>
 </project>
