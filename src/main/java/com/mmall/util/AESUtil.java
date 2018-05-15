@@ -67,7 +67,7 @@ public class AESUtil {
     }
 
     public static  void main(String[] aa) throws IllegalBlockSizeException, InvalidKeyException, BadPaddingException, NoSuchAlgorithmException, NoSuchPaddingException {
-        String ss=encrypt("我是李攀哦",secreKey,algorithm,true);
+        String ss=encrypt("00000000",secreKey,algorithm,true);
         System.out.println(ss);
 
         String sss=decoder(ss,secreKey,algorithm,false);

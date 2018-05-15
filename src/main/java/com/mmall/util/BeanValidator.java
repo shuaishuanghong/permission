@@ -14,6 +14,7 @@ import java.util.*;
 
 public class BeanValidator {
     private static ValidatorFactory validatorFactory= Validation.buildDefaultValidatorFactory();
+
     public  static <T>Map<String,String> validate(T t,Class... groups){
         Validator validator=validatorFactory.getValidator();
         Set validateResult = validator.validate(t,groups);

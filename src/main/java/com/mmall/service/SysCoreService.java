@@ -66,8 +66,8 @@ public class SysCoreService {
     }
 
     public  boolean hasUrlAcl(String url){
-        if (true) {
-            return false;
+        if (isSuperAdmin()) {
+            return true;
         }
         List<SysAcl> aclList = sysAclMapper.getByUrl(url);
         if (CollectionUtils.isEmpty(aclList)) {

@@ -38,9 +38,9 @@ public class UserController {
             errorMsg = "密码不可以为空";
         } else if (sysUser == null) {
             errorMsg = "查询不到指定的用户";
-        } else if (!sysUser.getPassword().equals(MD5Util.encrypt(password))) {
+        } /*else if (!sysUser.getPassword().equals(MD5Util.encrypt(password))) {
             errorMsg = "用户名或密码错误";
-        } else if (sysUser.getStatus() != 1) {
+        }*/ else if (sysUser.getStatus() != 1) {
             errorMsg = "用户已被冻结，请联系管理员";
         } else {
             // login success

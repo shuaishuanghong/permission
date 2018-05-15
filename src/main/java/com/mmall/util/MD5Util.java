@@ -33,6 +33,6 @@ public class MD5Util {
         }
     }
     public static  void main(String[] d){
-        System.out.print(encrypt("123"));
+        System.out.print(encrypt("我是李攀哦"));
     }
 }

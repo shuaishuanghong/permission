@@ -34,7 +34,8 @@ public class SysUserService {
         String encrptedPassword= MD5Util.encrypt(password);
         SysUser user=SysUser.builder().username(param.getUsername()).telephone(param.getTelephone())
                 .password(encrptedPassword).deptId(param.getDeptId()).status(param.getStatus()).remark(param.getRemark()).build();
-        user.setOperator(RequestHolder.getCurrentUser().getUsername());
+        String s=RequestHolder.getCurrentUser().getUsername();
+        user.setOperator(s);
         user.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentHttpServletRequest()));
         user.setOperateTime(new Date());
         //TODO:sendEmail
