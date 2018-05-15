@@ -3,7 +3,7 @@ package com.mmall.model;
 import java.util.Date;
 
 public class SysAcl {
-    //改你马屁  ，，，，，
+    //不改了，不改了  惹不起
     private Integer id;
 
     private String code;
