@@ -3,6 +3,7 @@ package com.mmall.model;
 import java.util.Date;
 
 public class SysAcl {
+    //改你马屁  ，，，，，
     private Integer id;
 
     private String code;
@@ -98,7 +99,6 @@ public class SysAcl {
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
     }
-
     public String getOperator() {
         return operator;
     }
